@@ -16,6 +16,9 @@ class ConferenciasVirtuales {
     private String DuracionConfe;
     private String EnlaceAccesoConfe;
 
+    public ConferenciasVirtuales() {
+    }
+
     public ConferenciasVirtuales(String TituloConfe, String Conferencista, Date FechaConfe, String DuracionConfe, String EnlaceAccesoConfe) {
         this.TituloConfe = TituloConfe;
         this.Conferencista = Conferencista;

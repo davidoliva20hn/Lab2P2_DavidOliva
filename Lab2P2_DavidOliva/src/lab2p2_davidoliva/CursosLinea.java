@@ -13,6 +13,9 @@ class CursosLinea {
     private String DuracionEnSemanaCurso;
     private String PlataformaEnseñaCurso;
 
+    public CursosLinea() {
+    }
+
     public CursosLinea(String tituloCurso, String instructorCurso, String DuracionEnSemanaCurso, String PlataformaEnseñaCurso) {
         this.tituloCurso = tituloCurso;
         this.instructorCurso = instructorCurso;

@@ -16,6 +16,9 @@ class Articulos {
     private Date AñoDePublicacionArticul;
     private String AccesoLineaArticul;
 
+    public Articulos() {
+    }
+
     public Articulos(String tituloArticul, String AutorArticul, String temaArticul, Date AñoDePublicacionArticul, String AccesoLineaArticul) {
         this.tituloArticul = tituloArticul;
         this.AutorArticul = AutorArticul;

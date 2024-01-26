@@ -16,6 +16,9 @@ class Libros {
     private Date AñoDePublicacionLibro;
     private String DisponibilidadLibro;
 
+    public Libros() {
+    }
+
     public Libros(String tituloLibro, String AutorLibro, String generoLibro, Date AñoDePublicacionLibro, String DisponibilidadLibro) {
         this.tituloLibro = tituloLibro;
         this.AutorLibro = AutorLibro;
