@@ -2,6 +2,7 @@
  */
 package lab2p2_davidoliva;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -14,17 +15,18 @@ public class Lab2P2_DavidOliva {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+       ArrayList ListaBiblioteca = new ArrayList();
         Scanner leer = new Scanner(System.in);
         Scanner lea = new Scanner(System.in);
-        Usuario Estudiante = new Usuario("David", "1234A", "Estudiante");
         int Submenu = 0;
         int menu = 0;
         int opc = 0;
+        int TipoRecurso=0;
         do {
             System.out.println("Menú\n"
-                    + "1.	Agregar usuario\n"
-                    + "2.	Submenu\n"
-                    + "3.	Salir");
+                    + "1. Agregar usuario\n"
+                    + "2. Submenu\n"
+                    + "3. Salir");
             System.out.println("Ingrese Una Opcion:");
             menu = lea.nextInt();
             switch (menu) {
@@ -35,6 +37,17 @@ public class Lab2P2_DavidOliva {
                             + "3. Bibliotecario");
                     System.out.println("Ingrese Una Opcion:");
                     opc = lea.nextInt();
+                    switch (opc) {
+                        case 1 -> {
+                            Usuario usuario = new Usuario("David", "1234A", "Estudiante");
+                        }
+                        case 2 -> {
+                            Usuario usuario = new Usuario("Andres", "1234E", "Profesor");
+                        }
+                        case 3 -> {
+                            Usuario usuario = new Usuario("Victoria", "1234W", "Bibliotecario");
+                        }
+                    }
 
                 }
                 case 2 -> {
@@ -50,6 +63,17 @@ public class Lab2P2_DavidOliva {
 
                         }
                         case 2 -> {
+                            System.out.println("1. Libros\n"
+                                    + "2. Artículos\n"
+                                    + "3. Cursos en Linea\n"
+                                    + "4. Conferencias Virtuales");
+                            System.out.println("Ingrese opcion:");
+                            TipoRecurso = lea.nextInt();
+                            switch (TipoRecurso) {
+                                case 1 -> {
+                                    
+                                }
+                            }
 
                         }
                         case 3 -> {

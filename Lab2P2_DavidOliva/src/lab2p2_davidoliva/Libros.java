@@ -13,13 +13,13 @@ class Libros {
     private String tituloLibro;
     private String AutorLibro;
     private String generoLibro;
-    private Date AñoDePublicacionLibro;
+    private String AñoDePublicacionLibro;
     private String DisponibilidadLibro;
 
     public Libros() {
     }
 
-    public Libros(String tituloLibro, String AutorLibro, String generoLibro, Date AñoDePublicacionLibro, String DisponibilidadLibro) {
+    public Libros(String tituloLibro, String AutorLibro, String generoLibro, String AñoDePublicacionLibro, String DisponibilidadLibro) {
         this.tituloLibro = tituloLibro;
         this.AutorLibro = AutorLibro;
         this.generoLibro = generoLibro;
@@ -51,11 +51,11 @@ class Libros {
         this.generoLibro = generoLibro;
     }
 
-    public Date getAñoDePublicacionLibro() {
+    public String getAñoDePublicacionLibro() {
         return AñoDePublicacionLibro;
     }
 
-    public void setAñoDePublicacionLibro(Date AñoDePublicacionLibro) {
+    public void setAñoDePublicacionLibro(String AñoDePublicacionLibro) {
         this.AñoDePublicacionLibro = AñoDePublicacionLibro;
     }
 
