@@ -9,65 +9,64 @@ import java.util.Date;
  * @author DAVIDANDRESOLIVAHERN
  */
 class Libros {
-    private String titulo;
-    private String Autor;
-    private String genero;
-    private Date AñoDePublicacion;
-    private String Disponibilidad;
 
-    public Libros(String titulo, String Autor, String genero, Date AñoDePublicacion, String Disponibilidad) {
-        this.titulo = titulo;
-        this.Autor = Autor;
-        this.genero = genero;
-        this.AñoDePublicacion = AñoDePublicacion;
-        this.Disponibilidad = Disponibilidad;
+    private String tituloLibro;
+    private String AutorLibro;
+    private String generoLibro;
+    private Date AñoDePublicacionLibro;
+    private String DisponibilidadLibro;
+
+    public Libros(String tituloLibro, String AutorLibro, String generoLibro, Date AñoDePublicacionLibro, String DisponibilidadLibro) {
+        this.tituloLibro = tituloLibro;
+        this.AutorLibro = AutorLibro;
+        this.generoLibro = generoLibro;
+        this.AñoDePublicacionLibro = AñoDePublicacionLibro;
+        this.DisponibilidadLibro = DisponibilidadLibro;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTituloLibro() {
+        return tituloLibro;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTituloLibro(String tituloLibro) {
+        this.tituloLibro = tituloLibro;
     }
 
-    public String getAutor() {
-        return Autor;
+    public String getAutorLibro() {
+        return AutorLibro;
     }
 
-    public void setAutor(String Autor) {
-        this.Autor = Autor;
+    public void setAutorLibro(String AutorLibro) {
+        this.AutorLibro = AutorLibro;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getGeneroLibro() {
+        return generoLibro;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setGeneroLibro(String generoLibro) {
+        this.generoLibro = generoLibro;
     }
 
-    public Date getAñoDePublicacion() {
-        return AñoDePublicacion;
+    public Date getAñoDePublicacionLibro() {
+        return AñoDePublicacionLibro;
     }
 
-    public void setAñoDePublicacion(Date AñoDePublicacion) {
-        this.AñoDePublicacion = AñoDePublicacion;
+    public void setAñoDePublicacionLibro(Date AñoDePublicacionLibro) {
+        this.AñoDePublicacionLibro = AñoDePublicacionLibro;
     }
 
-    public String getDisponibilidad() {
-        return Disponibilidad;
+    public String getDisponibilidadLibro() {
+        return DisponibilidadLibro;
     }
 
-    public void setDisponibilidad(String Disponibilidad) {
-        this.Disponibilidad = Disponibilidad;
+    public void setDisponibilidadLibro(String DisponibilidadLibro) {
+        this.DisponibilidadLibro = DisponibilidadLibro;
     }
 
     @Override
     public String toString() {
-        return "Libros{" + "titulo=" + titulo + ", Autor=" + Autor + ", genero=" + genero + ", A\u00f1oDePublicacion=" + AñoDePublicacion + ", Disponibilidad=" + Disponibilidad + '}';
+        return "Libros{" + "tituloLibro=" + tituloLibro + ", AutorLibro=" + AutorLibro + ", generoLibro=" + generoLibro + ", A\u00f1oDePublicacionLibro=" + AñoDePublicacionLibro + ", DisponibilidadLibro=" + DisponibilidadLibro + '}';
     }
-    
-    
-    
+
 }

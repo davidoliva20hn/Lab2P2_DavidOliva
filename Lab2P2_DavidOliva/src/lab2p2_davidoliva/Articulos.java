@@ -1,6 +1,4 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package lab2p2_davidoliva;
 
@@ -12,63 +10,63 @@ import java.util.Date;
  */
 class Articulos {
 
-    private String titulo;
-    private String Autor;
-    private String tema;
-    private Date AñoDePublicacion;
-    private String AccesoLinea;
+    private String tituloArticul;
+    private String AutorArticul;
+    private String temaArticul;
+    private Date AñoDePublicacionArticul;
+    private String AccesoLineaArticul;
 
-    public Articulos(String titulo, String Autor, String tema, Date AñoDePublicacion, String AccesoLinea) {
-        this.titulo = titulo;
-        this.Autor = Autor;
-        this.tema = tema;
-        this.AñoDePublicacion = AñoDePublicacion;
-        this.AccesoLinea = AccesoLinea;
+    public Articulos(String tituloArticul, String AutorArticul, String temaArticul, Date AñoDePublicacionArticul, String AccesoLineaArticul) {
+        this.tituloArticul = tituloArticul;
+        this.AutorArticul = AutorArticul;
+        this.temaArticul = temaArticul;
+        this.AñoDePublicacionArticul = AñoDePublicacionArticul;
+        this.AccesoLineaArticul = AccesoLineaArticul;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTituloArticul() {
+        return tituloArticul;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTituloArticul(String tituloArticul) {
+        this.tituloArticul = tituloArticul;
     }
 
-    public String getAutor() {
-        return Autor;
+    public String getAutorArticul() {
+        return AutorArticul;
     }
 
-    public void setAutor(String Autor) {
-        this.Autor = Autor;
+    public void setAutorArticul(String AutorArticul) {
+        this.AutorArticul = AutorArticul;
     }
 
-    public String getTema() {
-        return tema;
+    public String getTemaArticul() {
+        return temaArticul;
     }
 
-    public void setTema(String tema) {
-        this.tema = tema;
+    public void setTemaArticul(String temaArticul) {
+        this.temaArticul = temaArticul;
     }
 
-    public Date getAñoDePublicacion() {
-        return AñoDePublicacion;
+    public Date getAñoDePublicacionArticul() {
+        return AñoDePublicacionArticul;
     }
 
-    public void setAñoDePublicacion(Date AñoDePublicacion) {
-        this.AñoDePublicacion = AñoDePublicacion;
+    public void setAñoDePublicacionArticul(Date AñoDePublicacionArticul) {
+        this.AñoDePublicacionArticul = AñoDePublicacionArticul;
     }
 
-    public String getAccesoLinea() {
-        return AccesoLinea;
+    public String getAccesoLineaArticul() {
+        return AccesoLineaArticul;
     }
 
-    public void setAccesoLinea(String AccesoLinea) {
-        this.AccesoLinea = AccesoLinea;
+    public void setAccesoLineaArticul(String AccesoLineaArticul) {
+        this.AccesoLineaArticul = AccesoLineaArticul;
     }
 
     @Override
     public String toString() {
-        return "Articulos{" + "titulo=" + titulo + ", Autor=" + Autor + ", tema=" + tema + ", A\u00f1oDePublicacion=" + AñoDePublicacion + ", AccesoLinea=" + AccesoLinea + '}';
+        return "Articulos{" + "tituloArticul=" + tituloArticul + ", AutorArticul=" + AutorArticul + ", temaArticul=" + temaArticul + ", A\u00f1oDePublicacionArticul=" + AñoDePublicacionArticul + ", AccesoLineaArticul=" + AccesoLineaArticul + '}';
     }
 
 }
