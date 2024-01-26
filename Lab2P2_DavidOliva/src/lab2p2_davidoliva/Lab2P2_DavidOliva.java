@@ -15,13 +15,13 @@ public class Lab2P2_DavidOliva {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       ArrayList ListaBiblioteca = new ArrayList();
+        ArrayList ListaBiblioteca = new ArrayList();
         Scanner leer = new Scanner(System.in);
         Scanner lea = new Scanner(System.in);
         int Submenu = 0;
         int menu = 0;
         int opc = 0;
-        int TipoRecurso=0;
+        int TipoRecurso = 0;
         do {
             System.out.println("Menú\n"
                     + "1. Agregar usuario\n"
@@ -60,7 +60,9 @@ public class Lab2P2_DavidOliva {
                     Submenu = lea.nextInt();
                     switch (Submenu) {
                         case 1 -> {
-
+                            for (int i = 0; i < ListaBiblioteca.size(); i++) {
+                                
+                            }
                         }
                         case 2 -> {
                             System.out.println("1. Libros\n"
@@ -72,54 +74,70 @@ public class Lab2P2_DavidOliva {
                             switch (TipoRecurso) {
                                 case 1 -> {
                                     System.out.println("Ingrese un titulo:");
-                                    String titulo=leer.nextLine();
+                                    String titulo = leer.nextLine();
                                     System.out.println("Ingrese el autor:");
-                                    String autor=leer.nextLine();
+                                    String autor = leer.nextLine();
                                     System.out.println("Ingrese el genero:");
-                                    String genero=leer.nextLine();
+                                    String genero = leer.nextLine();
                                     System.out.println("Ingrese el año de publicasion:");
-                                    String año=leer.nextLine();
-                                    String disponibi="si";
+                                    String año = leer.nextLine();
+                                    String disponibi = "si";
+                                    ListaBiblioteca.add(new Libros(titulo, autor, genero,
+                                            año, disponibi));
                                 }
-                                case 2->{
+                                case 2 -> {
                                     System.out.println("Ingrese un titulo:");
                                     String titulo = leer.nextLine();
                                     System.out.println("Ingrese el autor:");
                                     String autor = leer.nextLine();
                                     System.out.println("Ingrese el tema:");
-                                    String tame = leer.nextLine();
+                                    String tema = leer.nextLine();
                                     System.out.println("Ingrese el año de publicasion:");
                                     String año = leer.nextLine();
                                     String disponibi = "si";
+                                    ListaBiblioteca.add(new Articulos(titulo, autor, tema,
+                                            año, disponibi));
                                 }
-                                case 3->{
-                                    
+                                case 3 -> {
+
                                     System.out.println("Ingrese un titulo:");
                                     String titulo = leer.nextLine();
                                     System.out.println("Ingrese el instructor:");
-                                    String instructor= leer.nextLine();
+                                    String instructor = leer.nextLine();
                                     System.out.println("Ingrese la Duracion:");
                                     String Duracion = leer.nextLine();
                                     System.out.println("Ingrese la Plataforma:");
                                     String Plataforma = leer.nextLine();
-                                    String disponibi = "si";
+                                    ListaBiblioteca.add(new CursosLinea(titulo, instructor,
+                                            Duracion, Plataforma));
                                 }
-                            }
+                                case 4 -> {
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el Conferencista:");
+                                    String Conferencista = leer.nextLine();
+                                    System.out.println("Ingrese la fecha:");
+                                    String FechaConfe = leer.nextLine();
+                                    System.out.println("Ingrese la Duracion:");
+                                    String Duracion = leer.nextLine();
+                                    System.out.println("Ingrese la Enlace Acceso:");
+                                    String EnlaceAcceso = leer.nextLine();
+                                    ListaBiblioteca.add(new ConferenciasVirtuales(titulo, Conferencista, FechaConfe,
+                                            Duracion, EnlaceAcceso));
+                                }
 
+                            }//fin TipoRecurso
                         }
                         case 3 -> {
 
                         }
-                        case 4 -> {
-
-                        }
-                    }
+                    }//fin submenu
                 }
                 case 3 -> {
                     System.exit(0);
                 }
 
-            }
+            } // fin menu
         } while (menu != 5);
     }
 

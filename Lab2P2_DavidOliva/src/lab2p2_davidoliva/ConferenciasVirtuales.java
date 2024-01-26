@@ -12,14 +12,14 @@ class ConferenciasVirtuales {
 
     private String TituloConfe;
     private String Conferencista;
-    private Date FechaConfe;
+    private String FechaConfe;
     private String DuracionConfe;
     private String EnlaceAccesoConfe;
 
     public ConferenciasVirtuales() {
     }
 
-    public ConferenciasVirtuales(String TituloConfe, String Conferencista, Date FechaConfe, String DuracionConfe, String EnlaceAccesoConfe) {
+    public ConferenciasVirtuales(String TituloConfe, String Conferencista, String FechaConfe, String DuracionConfe, String EnlaceAccesoConfe) {
         this.TituloConfe = TituloConfe;
         this.Conferencista = Conferencista;
         this.FechaConfe = FechaConfe;
@@ -43,11 +43,11 @@ class ConferenciasVirtuales {
         this.Conferencista = Conferencista;
     }
 
-    public Date getFechaConfe() {
+    public String getFechaConfe() {
         return FechaConfe;
     }
 
-    public void setFechaConfe(Date FechaConfe) {
+    public void setFechaConfe(String FechaConfe) {
         this.FechaConfe = FechaConfe;
     }
 
