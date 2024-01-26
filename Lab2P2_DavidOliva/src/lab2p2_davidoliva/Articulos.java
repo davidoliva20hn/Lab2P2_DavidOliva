@@ -13,13 +13,13 @@ class Articulos {
     private String tituloArticul;
     private String AutorArticul;
     private String temaArticul;
-    private Date AñoDePublicacionArticul;
+    private String AñoDePublicacionArticul;
     private String AccesoLineaArticul;
 
     public Articulos() {
     }
 
-    public Articulos(String tituloArticul, String AutorArticul, String temaArticul, Date AñoDePublicacionArticul, String AccesoLineaArticul) {
+    public Articulos(String tituloArticul, String AutorArticul, String temaArticul, String AñoDePublicacionArticul, String AccesoLineaArticul) {
         this.tituloArticul = tituloArticul;
         this.AutorArticul = AutorArticul;
         this.temaArticul = temaArticul;
@@ -51,11 +51,11 @@ class Articulos {
         this.temaArticul = temaArticul;
     }
 
-    public Date getAñoDePublicacionArticul() {
+    public String getAñoDePublicacionArticul() {
         return AñoDePublicacionArticul;
     }
 
-    public void setAñoDePublicacionArticul(Date AñoDePublicacionArticul) {
+    public void setAñoDePublicacionArticul(String AñoDePublicacionArticul) {
         this.AñoDePublicacionArticul = AñoDePublicacionArticul;
     }
 

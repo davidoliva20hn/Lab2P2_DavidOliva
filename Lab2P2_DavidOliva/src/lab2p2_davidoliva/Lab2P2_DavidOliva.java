@@ -71,7 +71,38 @@ public class Lab2P2_DavidOliva {
                             TipoRecurso = lea.nextInt();
                             switch (TipoRecurso) {
                                 case 1 -> {
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo=leer.nextLine();
+                                    System.out.println("Ingrese el autor:");
+                                    String autor=leer.nextLine();
+                                    System.out.println("Ingrese el genero:");
+                                    String genero=leer.nextLine();
+                                    System.out.println("Ingrese el año de publicasion:");
+                                    String año=leer.nextLine();
+                                    String disponibi="si";
+                                }
+                                case 2->{
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el autor:");
+                                    String autor = leer.nextLine();
+                                    System.out.println("Ingrese el tema:");
+                                    String tame = leer.nextLine();
+                                    System.out.println("Ingrese el año de publicasion:");
+                                    String año = leer.nextLine();
+                                    String disponibi = "si";
+                                }
+                                case 3->{
                                     
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el instructor:");
+                                    String instructor= leer.nextLine();
+                                    System.out.println("Ingrese la Duracion:");
+                                    String Duracion = leer.nextLine();
+                                    System.out.println("Ingrese la Plataforma:");
+                                    String Plataforma = leer.nextLine();
+                                    String disponibi = "si";
                                 }
                             }
 
