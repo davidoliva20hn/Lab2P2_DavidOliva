@@ -54,15 +54,18 @@ public class Lab2P2_DavidOliva {
                     System.out.println("Submenu\n"
                             + "1. Listar Recursos\n"
                             + "2. Crear Recurso\n"
-                            + "3. Eliminar Recurso"
+                            + "3. Eliminar Recurso\n"
+                            + "4. Modificar recurso"
                     );
                     System.out.println("Ingrese una opcion:");
                     Submenu = lea.nextInt();
                     switch (Submenu) {
                         case 1 -> {
+                            String Listar = "";
                             for (int i = 0; i < ListaBiblioteca.size(); i++) {
-                                
+                                Listar += i + ". " + ListaBiblioteca.get(i) + "\n";
                             }
+                            System.out.println(Listar);
                         }
                         case 2 -> {
                             System.out.println("1. Libros\n"
@@ -129,7 +132,76 @@ public class Lab2P2_DavidOliva {
                             }//fin TipoRecurso
                         }
                         case 3 -> {
+                            System.out.println("Ingrse la posicion a eliminar :");
+                            int posicioneliminar = lea.nextInt();
+                            ListaBiblioteca.remove(posicioneliminar);
+                        }
+                        case 4 -> {
+                            System.out.println("Ingrse la posicion a modificar:");
+                            int posicionmodif = lea.nextInt();
+                            ListaBiblioteca.remove(posicionmodif);
+                            System.out.println("1. Libros\n"
+                                    + "2. Artículos\n"
+                                    + "3. Cursos en Linea\n"
+                                    + "4. Conferencias Virtuales");
+                            System.out.println("Ingrese la operacion:");
+                            TipoRecurso = lea.nextInt();
+                            switch (TipoRecurso) {
+                                case 1 -> {
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el autor:");
+                                    String autor = leer.nextLine();
+                                    System.out.println("Ingrese el genero:");
+                                    String genero = leer.nextLine();
+                                    System.out.println("Ingrese el año de publicasion:");
+                                    String año = leer.nextLine();
+                                    String disponibi = "si";
+                                    ListaBiblioteca.set(posicionmodif, new Libros(titulo, autor, genero,
+                                            año, disponibi));
+                                }
+                                case 2 -> {
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el autor:");
+                                    String autor = leer.nextLine();
+                                    System.out.println("Ingrese el tema:");
+                                    String tema = leer.nextLine();
+                                    System.out.println("Ingrese el año de publicasion:");
+                                    String año = leer.nextLine();
+                                    String disponibi = "si";
+                                    ListaBiblioteca.set(posicionmodif, new Articulos(titulo, autor, tema,
+                                            año, disponibi));
+                                }
+                                case 3 -> {
 
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el instructor:");
+                                    String instructor = leer.nextLine();
+                                    System.out.println("Ingrese la Duracion:");
+                                    String Duracion = leer.nextLine();
+                                    System.out.println("Ingrese la Plataforma:");
+                                    String Plataforma = leer.nextLine();
+                                    ListaBiblioteca.set(posicionmodif, new CursosLinea(titulo, instructor,
+                                            Duracion, Plataforma));
+                                }
+                                case 4 -> {
+                                    System.out.println("Ingrese un titulo:");
+                                    String titulo = leer.nextLine();
+                                    System.out.println("Ingrese el Conferencista:");
+                                    String Conferencista = leer.nextLine();
+                                    System.out.println("Ingrese la fecha:");
+                                    String FechaConfe = leer.nextLine();
+                                    System.out.println("Ingrese la Duracion:");
+                                    String Duracion = leer.nextLine();
+                                    System.out.println("Ingrese la Enlace Acceso:");
+                                    String EnlaceAcceso = leer.nextLine();
+                                    ListaBiblioteca.set(posicionmodif, new ConferenciasVirtuales(titulo, Conferencista, FechaConfe,
+                                            Duracion, EnlaceAcceso));
+                                }
+
+                            }//fin TipoRecurso
                         }
                     }//fin submenu
                 }
