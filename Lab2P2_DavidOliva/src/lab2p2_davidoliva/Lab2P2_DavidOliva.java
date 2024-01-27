@@ -23,18 +23,20 @@ public class Lab2P2_DavidOliva {
         int opc = 0;
         int TipoRecurso = 0;
         do {
-            System.out.println("Menú\n"
-                    + "1. Agregar usuario\n"
-                    + "2. Submenu\n"
-                    + "3. Salir");
+            System.out.println("""
+                               Menu
+                               1. Agregar usuario
+                               2. Biblioteca
+                               3. Salir""");
             System.out.println("Ingrese Una Opcion:");
             menu = lea.nextInt();
             switch (menu) {
                 case 1 -> {
-                    System.out.println("Usuario\n"
-                            + "1. Estudiante\n"
-                            + "2. Profesor\n"
-                            + "3. Bibliotecario");
+                    System.out.println("""
+                                       Usuario
+                                       1. Estudiante
+                                       2. Profesor
+                                       3. Bibliotecario""");
                     System.out.println("Ingrese Una Opcion:");
                     opc = lea.nextInt();
                     switch (opc) {
@@ -51,12 +53,12 @@ public class Lab2P2_DavidOliva {
 
                 }
                 case 2 -> {
-                    System.out.println("Submenu\n"
-                            + "1. Listar Recursos\n"
-                            + "2. Crear Recurso\n"
-                            + "3. Eliminar Recurso\n"
-                            + "4. Modificar recurso"
-                    );
+                    System.out.println("""
+                                       Submenu
+                                       1. Listar Recursos
+                                       2. Crear Recurso
+                                       3. Eliminar Recurso
+                                       4. Modificar recurso""");
                     System.out.println("Ingrese una opcion:");
                     Submenu = lea.nextInt();
                     switch (Submenu) {
@@ -68,10 +70,11 @@ public class Lab2P2_DavidOliva {
                             System.out.println(Listar);
                         }
                         case 2 -> {
-                            System.out.println("1. Libros\n"
-                                    + "2. Artículos\n"
-                                    + "3. Cursos en Linea\n"
-                                    + "4. Conferencias Virtuales");
+                            System.out.println("""
+                                               1. Libros
+                                               2. Articulos
+                                               3. Cursos en Linea
+                                               4. Conferencias Virtuales""");
                             System.out.println("Ingrese opcion:");
                             TipoRecurso = lea.nextInt();
                             switch (TipoRecurso) {
@@ -139,11 +142,11 @@ public class Lab2P2_DavidOliva {
                         case 4 -> {
                             System.out.println("Ingrse la posicion a modificar:");
                             int posicionmodif = lea.nextInt();
-                            ListaBiblioteca.remove(posicionmodif);
-                            System.out.println("1. Libros\n"
-                                    + "2. Artículos\n"
-                                    + "3. Cursos en Linea\n"
-                                    + "4. Conferencias Virtuales");
+                            System.out.println("""
+                                               1. Libros
+                                               2. Articulos
+                                               3. Cursos en Linea
+                                               4. Conferencias Virtuales""");
                             System.out.println("Ingrese la operacion:");
                             TipoRecurso = lea.nextInt();
                             switch (TipoRecurso) {
