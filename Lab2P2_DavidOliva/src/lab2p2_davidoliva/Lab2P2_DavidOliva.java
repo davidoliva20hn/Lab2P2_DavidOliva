@@ -5,6 +5,7 @@ package lab2p2_davidoliva;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 /**
  *
  * @author DAVIDANDRESOLIVAHERN
@@ -16,6 +17,7 @@ public class Lab2P2_DavidOliva {
      */
     public static void main(String[] args) {
         ArrayList ListaBiblioteca = new ArrayList();
+        ArrayList usuarios = new ArrayList();
         Scanner leer = new Scanner(System.in);
         Scanner lea = new Scanner(System.in);
         int Submenu = 0;
@@ -41,18 +43,25 @@ public class Lab2P2_DavidOliva {
                     opc = lea.nextInt();
                     switch (opc) {
                         case 1 -> {
-                            Usuario usuario = new Usuario("David", "1234A", "Estudiante");
+                            usuarios.add(new Usuario("David", "1234A", "Estudiante"));
                         }
                         case 2 -> {
-                            Usuario usuario = new Usuario("Andres", "1234E", "Profesor");
+                            usuarios.add(new Usuario("Andres", "1234E", "Profesor"));
                         }
                         case 3 -> {
-                            Usuario usuario = new Usuario("Victoria", "1234W", "Bibliotecario");
+                            usuarios.add(new Usuario("Victoria", "1234W", "Bibliotecario"));
                         }
                     }
 
                 }
                 case 2 -> {
+                    System.out.println("""
+                                       Tipo de usuario
+                                       1. Estudiante 
+                                       2. Profesor
+                                       3. Bibliotecario""");
+                    System.out.println("eleija el tipo de usuario:");
+                    int tipousuari = lea.nextInt();
                     System.out.println("""
                                        Submenu
                                        1. Listar Recursos
@@ -61,6 +70,24 @@ public class Lab2P2_DavidOliva {
                                        4. Modificar recurso""");
                     System.out.println("Ingrese una opcion:");
                     Submenu = lea.nextInt();
+                    if (Submenu == 2 && tipousuari == 0) {
+                        System.out.println("lo sentimos su tipo de usuari no es valido para esta opcion");
+                        break;
+                    } else if (Submenu == 3 && tipousuari == 0) {
+                        System.out.println("lo sentimos su tipo de usuari no es valido para esta opcion");
+                        break;
+                    } else if (Submenu == 3 && tipousuari == 1) {
+                        System.out.println("lo sentimos su tipo de usuari no es valido para esta opcion");
+                        break;
+                    }
+                    if (Submenu == 4 && tipousuari == 0) {
+                        System.out.println("lo sentimos su tipo de usuari no es valido para esta opcion");
+                        break;
+                    }
+                    if (Submenu == 4 && tipousuari == 1) {
+                        System.out.println("lo sentimos su tipo de usuari no es valido para esta opcion");
+                        break;
+                    }
                     switch (Submenu) {
                         case 1 -> {
                             String Listar = "";
